@@ -9,8 +9,8 @@
 title: Читательский клуб
 email: projects@alexsukhotin.com
 description: Читательский клуб
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://sagamor.github.io/readingclub" # the base hostname & protocol for your site
+baseurl: "/readingclub" # the subpath of your site, e.g. /blog
+url: "http://sagamor.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
