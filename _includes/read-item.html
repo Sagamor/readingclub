@@ -1,7 +1,0 @@
-<div>
-  Произведение: <span class="book-author">{{ post.book-author }}</span> <span class="book-title">{{ post.book-title }}</span><br/>
-  {% if post.part %}Часть: {{ post.part }}<br/>{% endif %}
-  Кто читал: {{ post.reader }}
-  <blockquote>{{ post.content }}</blockquote>
-  <a href="{{ post.recording }}" class="{% if post.recording %}nolink{% endif %}">Слушать запись</a> • <a href="{{ post.link }}" class="{% if post.link %}nolink{% endif %}">Читать самостоятельно</a>
-</div>
