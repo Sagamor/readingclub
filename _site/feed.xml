@@ -2,54 +2,119 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Читательский клуб</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 Apr 2016 12:35:30 +0200</pubDate>
-    <lastBuildDate>Sun, 03 Apr 2016 12:35:30 +0200</lastBuildDate>
+    <description>Читательский клуб</description>
+    <link>http://sagamor.github.io/readingclub/</link>
+    <atom:link href="http://sagamor.github.io/readingclub/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 03 Apr 2016 22:17:51 +0200</pubDate>
+    <lastBuildDate>Sun, 03 Apr 2016 22:17:51 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>004</title>
+        <title></title>
         <description>
 </description>
-        <pubDate>Sat, 04 Oct 2014 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000//2014/10/04/004.html</link>
-        <guid isPermaLink="true">http://localhost:4000//2014/10/04/004.html</guid>
+        <pubDate>Sun, 03 Apr 2016 22:17:51 +0200</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/04/03/2015-08-16-033.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/04/03/2015-08-16-033.html</guid>
         
         
       </item>
     
       <item>
-        <title>003</title>
+        <title>062</title>
         <description>
 </description>
-        <pubDate>Sat, 04 Oct 2014 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000//2014/10/04/003.html</link>
-        <guid isPermaLink="true">http://localhost:4000//2014/10/04/003.html</guid>
+        <pubDate>Sat, 02 Apr 2016 00:00:00 +0200</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/04/02/062.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/04/02/062.html</guid>
         
         
       </item>
     
       <item>
-        <title>002</title>
+        <title>061</title>
         <description>
 </description>
-        <pubDate>Sat, 04 Oct 2014 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000//2014/10/04/002.html</link>
-        <guid isPermaLink="true">http://localhost:4000//2014/10/04/002.html</guid>
+        <pubDate>Sat, 26 Mar 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/03/26/061.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/03/26/061.html</guid>
         
         
       </item>
     
       <item>
-        <title>001</title>
+        <title>060</title>
         <description>
 </description>
-        <pubDate>Sat, 20 Sep 2014 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000//2014/09/20/001.html</link>
-        <guid isPermaLink="true">http://localhost:4000//2014/09/20/001.html</guid>
+        <pubDate>Sun, 20 Mar 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/03/20/060.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/03/20/060.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>059</title>
+        <description>
+</description>
+        <pubDate>Sat, 12 Mar 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/03/12/059.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/03/12/059.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>058</title>
+        <description>
+</description>
+        <pubDate>Sat, 05 Mar 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/03/05/058.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/03/05/058.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>057</title>
+        <description>
+</description>
+        <pubDate>Sat, 23 Jan 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/01/23/057.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/01/23/057.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>056</title>
+        <description>
+</description>
+        <pubDate>Sun, 17 Jan 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/01/17/056.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/01/17/056.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>055</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Jan 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/01/09/055.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/01/09/055.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>054</title>
+        <description>
+</description>
+        <pubDate>Sat, 02 Jan 2016 00:00:00 +0100</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/01/02/054.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/01/02/054.html</guid>
         
         
       </item>
