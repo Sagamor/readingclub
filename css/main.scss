@@ -142,7 +142,12 @@ body {
   background-color: $brand-accent-color;
   border-width: 15px;
   border-style: solid;
-	border-color: transparent transparent transparent #fff;
+	border-color: transparent transparent transparent $background-color;
+  transition: all .5s ease-in-out;
+}
+
+.book:hover .post-event:after {
+  border-color: transparent transparent transparent #fdfdfd;
 }
 
 .media {

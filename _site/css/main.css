@@ -87,7 +87,11 @@ body {
   background-color: #f65100;
   border-width: 15px;
   border-style: solid;
-  border-color: transparent transparent transparent #fff; }
+  border-color: transparent transparent transparent #faf9f7;
+  transition: all .5s ease-in-out; }
+
+.book:hover .post-event:after {
+  border-color: transparent transparent transparent #fdfdfd; }
 
 .media {
   margin: 20px 0 0 0;
