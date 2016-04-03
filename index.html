@@ -6,30 +6,25 @@ layout: default
   <ul class="post-list">
     <li class="center">. . .</li>
     {% for post in site.posts %}
-      <li class="separator">§ {{ post.title }}</li>
+      <li class="separator"></li>
       <li class="book {% if post.event %}special{% endif %}">
+        <h4>§ {{ post.title }}</h4>
         {% if post.event %}<span class="post-event">{{ post.event }}</span>{% endif %}
         <h3>{{ post.book-author }}</h3>
         <h2>{{ post.book-title }}</h2>
+        {% if post.part %}<h3 class="book-part">{{ post.part | markdownify | replace: ';', '|' }}</h3>{% endif %}
         <div class="post-meta">
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
           | <span class="reader">{{ post.reader }}</span>
           {% if post.duration %}| ~{{ post.duration }}{% endif %}
         </div>
 
-        {% if post.part %}
-          <span class="book-part">
-            <strong>Прочитано:</strong><br/>
-            <ul>
-              <li>{{ post.part | markdownify | replace: ';', '</li><li>' }}</li>
-            </ul>
-            </span>
-        {% endif %}
-
         {% if post.content %}<blockquote>{{ post.content }}</blockquote>{% endif %}
 
-        <a href="{{ post.recording }}" class="recording-link {% if post.recording %}link{% else %} nolink{% endif %}">Слушать запись</a>
-        <a href="{{ post.text-file }}" class="text-file-link {% if post.text-file %}link{% else %} nolink{% endif %}">Читать самостоятельно</a>
+        <div class="media">
+          <a href="{{ post.recording }}" class="recording-link {% if post.recording %}link{% else %} nolink{% endif %}">Слушать запись</a>
+          <a href="{{ post.text-file }}" class="text-file-link {% if post.text-file %}link{% else %} nolink{% endif %}">Читать самостоятельно</a>
+        </div>
 
       </li>
     {% endfor %}

@@ -15,9 +15,11 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #faf9f7;
+$bg-darker:        #dad9d7;
+
 $brand-color:      #ffa200;
-$brand-hover-color:#f65100;
+$brand-accent-color:#f65100;
 $brand-compl-color:#0376b8;
 
 $grey-color:       #828282;
@@ -36,6 +38,10 @@ body {
   border: 25px solid $brand-compl-color;
 }
 
+.center {
+  text-align: center;
+}
+
 .post-list {
   font-weight: 100;
 }
@@ -44,58 +50,70 @@ body {
   margin: 0;
 }
 
-.center {
-  text-align: center;
-}
-
 .post-list li.separator:nth-child(2) {
   display: none;
 }
 
-.separator {
-  display: block;
-  text-align: center;
-  color: $brand-compl-color;
-  font-size: 1.1em;
-  line-height: 1em;
+.post-list .separator {
+  border-bottom: 1px dashed $bg-darker;
 }
 
 .book {
-  // margin: 0 0 30px 0;
   font-size: 0.8em;
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   transition: all .5s ease-in-out;
   position: relative;
+  border-radius: 2px;
 }
 
 .book.special {
-  border: 1px $brand-hover-color solid;
+  border: 1px $brand-accent-color solid;
 }
 
 .book:hover {
-  background-color: lighten($grey-color, 47%);
+  background-color: #fdfdfd;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .07);
 }
 
-.book h2 { font-size: 1.75em; }
-
-.book h3 { font-size: 1.2em; }
-
-.book p, .book h2, .book h3 {
+.book p, .book h2, .book h3, .book h4 {
   margin: 0;
   padding: 0;
   line-height: 1.2em;
 }
 
-.post-meta {
-  margin: 10px 0;
-  color: $brand-hover-color !important;
+.book h2 {
+  font-size: 1.75em;
+  text-align: center;
 }
 
-.post-date, .post-event, .reader {}
+.book h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.book h4 {
+  text-align: center;
+  color: $brand-compl-color;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.book h3.book-part {
+  font-size: 1em;
+  margin: 5px 0 0 0;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-meta {
+  margin: 10px 0;
+  color: $brand-accent-color !important;
+  text-align: center;
+}
 
 .post-event {
   font-weight: 100;
@@ -105,9 +123,13 @@ body {
   line-height: 20px;
   top: 5px;
   right: -8px;
-  background-color: $brand-hover-color;
-  padding: 5px 12px;
+  background-color: $brand-accent-color;
+  padding: 5px 11px;
   color: #fff;
+  border-radius:  0px
+                  2px
+                  2px
+                  0px;
 }
 
 .post-event:after {
@@ -117,28 +139,15 @@ body {
 	height: 0;
 	left: -20px;
 	top: 0px;
-  background-color: $brand-hover-color;
+  background-color: $brand-accent-color;
   border-width: 15px;
   border-style: solid;
 	border-color: transparent transparent transparent #fff;
 }
 
-.book-part {
-  font-size: 1.1em;
-}
-
-.book-part ul {
-  margin: 0;
-}
-
-.book-part ul li {
-  list-style: disc inside;
-}
-
-.book-part strong {
-  font-weight: 100;
-  // text-transform: uppercase;
-  color: $brand-compl-color;
+.media {
+  margin: 20px 0 0 0;
+  text-align: center;
 }
 
 .recording-link:before,
@@ -156,8 +165,6 @@ body {
   content: '\f15c';
 }
 
-.reader {}
-
 a.link, a.nolink {
   padding: 5px 12px;
   border-radius: 4px;
@@ -170,16 +177,18 @@ a.link {
 }
 
 a.link:hover {
-  background-color: $brand-hover-color !important;
+  background-color: $brand-accent-color !important;
 }
 
 a.link:visited {}
 
 a.nolink {
+  // display: none;
   pointer-events: none;
   cursor: pointer;
-  color: #ccc !important;
-  border: 1px #ccc solid;
+  color: $bg-darker !important;
+  border: 1px $bg-darker solid;
+  background: transparent;
 }
 
 .book blockquote p {

@@ -1,55 +1,68 @@
 body {
   border: 25px solid #0376b8; }
 
+.center {
+  text-align: center; }
+
 .post-list {
   font-weight: 100; }
 
 .post-list li {
   margin: 0; }
 
-.center {
-  text-align: center; }
-
 .post-list li.separator:nth-child(2) {
   display: none; }
 
-.separator {
-  display: block;
-  text-align: center;
-  color: #0376b8;
-  font-size: 1.1em;
-  line-height: 1em; }
+.post-list .separator {
+  border-bottom: 1px dashed #dad9d7; }
 
 .book {
   font-size: 0.8em;
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   transition: all .5s ease-in-out;
-  position: relative; }
+  position: relative;
+  border-radius: 2px; }
 
 .book.special {
   border: 1px #f65100 solid; }
 
 .book:hover {
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07); }
 
-.book h2 {
-  font-size: 1.75em; }
-
-.book h3 {
-  font-size: 1.2em; }
-
-.book p, .book h2, .book h3 {
+.book p, .book h2, .book h3, .book h4 {
   margin: 0;
   padding: 0;
   line-height: 1.2em; }
 
+.book h2 {
+  font-size: 1.75em;
+  text-align: center; }
+
+.book h3 {
+  font-size: 1.2em;
+  text-align: center; }
+
+.book h4 {
+  text-align: center;
+  color: #0376b8;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  letter-spacing: 1px; }
+
+.book h3.book-part {
+  font-size: 1em;
+  margin: 5px 0 0 0;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
 .post-meta {
   margin: 10px 0;
-  color: #f65100 !important; }
+  color: #f65100 !important;
+  text-align: center; }
 
 .post-event {
   font-weight: 100;
@@ -60,8 +73,9 @@ body {
   top: 5px;
   right: -8px;
   background-color: #f65100;
-  padding: 5px 12px;
-  color: #fff; }
+  padding: 5px 11px;
+  color: #fff;
+  border-radius: 0px 2px 2px 0px; }
 
 .post-event:after {
   content: ' ';
@@ -75,18 +89,9 @@ body {
   border-style: solid;
   border-color: transparent transparent transparent #fff; }
 
-.book-part {
-  font-size: 1.1em; }
-
-.book-part ul {
-  margin: 0; }
-
-.book-part ul li {
-  list-style: disc inside; }
-
-.book-part strong {
-  font-weight: 100;
-  color: #0376b8; }
+.media {
+  margin: 20px 0 0 0;
+  text-align: center; }
 
 .recording-link:before,
 .text-file-link:before {
@@ -115,8 +120,9 @@ a.link:hover {
 a.nolink {
   pointer-events: none;
   cursor: pointer;
-  color: #ccc !important;
-  border: 1px #ccc solid; }
+  color: #dad9d7 !important;
+  border: 1px #dad9d7 solid;
+  background: transparent; }
 
 .book blockquote p {
   margin: 10px 0 20px 0;
@@ -140,7 +146,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 "Open Sans", Helvetica, Arial, sans-serif;
   color: #111;
-  background-color: #fdfdfd;
+  background-color: #faf9f7;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -300,7 +306,7 @@ pre {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #fdfdfd;
+      background-color: #faf9f7;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right; }
