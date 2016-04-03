@@ -1,0 +1,196 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #ffa200;
+$brand-hover-color:#f65100;
+$brand-compl-color:#0376b8;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+// Styles
+body {
+  border: 25px solid $brand-compl-color;
+}
+
+.post-list {
+  font-weight: 100;
+}
+
+.post-list li {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.post-list li.separator:nth-child(2) {
+  display: none;
+}
+
+.separator {
+  display: block;
+  text-align: center;
+  color: $brand-compl-color;
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.book {
+  // margin: 0 0 30px 0;
+  font-size: 0.8em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  transition: all .5s ease-in-out;
+  position: relative;
+}
+
+.book.special {
+  border: 1px $brand-hover-color solid;
+}
+
+.book:hover {
+  background-color: lighten($grey-color, 47%);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .07);
+}
+
+.book h2 { font-size: 1.75em; }
+
+.book h3 { font-size: 1.2em; }
+
+.book p, .book h2, .book h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+
+.post-meta {
+  margin: 10px 0;
+  color: $brand-hover-color !important;
+}
+
+.post-date, .post-event, .reader {}
+
+.post-event {
+  font-weight: 100;
+  position: absolute;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  top: 5px;
+  right: -8px;
+  background-color: $brand-hover-color;
+  padding: 5px 12px;
+  color: #fff;
+}
+
+.post-event:after {
+  content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -20px;
+	top: 0px;
+  background-color: $brand-hover-color;
+  border-width: 15px;
+  border-style: solid;
+	border-color: transparent transparent transparent #fff;
+}
+
+.book-part {
+  font-size: 1.1em;
+}
+
+.book-part ul {
+  margin: 0;
+}
+
+.book-part ul li {
+  list-style: disc inside;
+}
+
+.book-part strong {
+  font-weight: 100;
+  // text-transform: uppercase;
+  color: $brand-compl-color;
+}
+
+.reader {}
+
+a.link, a.nolink {
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+a.link {
+  color: #fff !important;
+  background-color: $brand-color !important;
+  transition: all .3s ease-in-out;
+}
+
+a.link:hover {
+  background-color: $brand-hover-color !important;
+}
+
+a.link:visited {}
+
+a.nolink {
+  pointer-events: none;
+  cursor: pointer;
+  color: #ccc !important;
+  border: 1px #ccc solid;
+}
+
+.book blockquote {
+  margin: 10px 0 20px 0;
+  font-size: 1.15em;
+  font-weight: 100;
+}
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting";

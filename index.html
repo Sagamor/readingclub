@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="home">
+  <ul class="post-list">
+    <li class="center">. . .</li>
+    {% for post in site.posts %}
+      <li class="separator">§</li>
+      <li class="book {% if post.event %}special{% endif %}">
+        {% if post.event %}<span class="post-event">{{ post.event }}</span>{% endif %}
+        <h3>{{ post.book-author }}</h3>
+        <h2>{{ post.book-title }}</h2>
+        <div class="post-meta">
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          | <span class="reader">{{ post.reader }}</span>
+          {% if post.duration %}| ~{{ post.duration }}{% endif %}
+        </div>
+
+        {% if post.part %}
+          <span class="book-part">
+            <strong>Прочитано:</strong><br/>
+            <ul>
+              <li>{{ post.part | markdownify | replace: ';', '</li><li>' }}</li>
+            </ul>
+            </span>
+        {% endif %}
+
+        {% if post.content %}<blockquote>{{ post.content }}</blockquote>{% endif %}
+
+        <a href="{{ post.recording }}" class="{% if post.recording %}link{% else %} nolink{% endif %}">Слушать запись</a>
+        <a href="{{ post.text-file }}" class="{% if post.text-file %}link{% else %} nolink{% endif %}">Читать самостоятельно</a>
+
+      </li>
+    {% endfor %}
+    <li class="center">&mdash;</li>
+  </ul>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</div>
