@@ -141,6 +141,21 @@ body {
   color: $brand-compl-color;
 }
 
+.recording-link:before,
+.text-file-link:before {
+  font-family: 'FontAwesome';
+  font-size: 0.8em;
+  margin-right: 6px;
+}
+
+.recording-link:before {
+  content: '\f04b';
+}
+
+.text-file-link:before {
+  content: '\f15c';
+}
+
 .reader {}
 
 a.link, a.nolink {
@@ -167,9 +182,11 @@ a.nolink {
   border: 1px #ccc solid;
 }
 
-.book blockquote {
+.book blockquote p {
   margin: 10px 0 20px 0;
-  font-size: 1.15em;
+  padding: 5px 0;
+  font-size: 1.1em;
+  line-height: 1.7em;
   font-weight: 100;
 }
 

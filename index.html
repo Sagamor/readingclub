@@ -6,7 +6,7 @@ layout: default
   <ul class="post-list">
     <li class="center">. . .</li>
     {% for post in site.posts %}
-      <li class="separator">§</li>
+      <li class="separator">§ {{ post.title }}</li>
       <li class="book {% if post.event %}special{% endif %}">
         {% if post.event %}<span class="post-event">{{ post.event }}</span>{% endif %}
         <h3>{{ post.book-author }}</h3>
@@ -28,8 +28,8 @@ layout: default
 
         {% if post.content %}<blockquote>{{ post.content }}</blockquote>{% endif %}
 
-        <a href="{{ post.recording }}" class="{% if post.recording %}link{% else %} nolink{% endif %}">Слушать запись</a>
-        <a href="{{ post.text-file }}" class="{% if post.text-file %}link{% else %} nolink{% endif %}">Читать самостоятельно</a>
+        <a href="{{ post.recording }}" class="recording-link {% if post.recording %}link{% else %} nolink{% endif %}">Слушать запись</a>
+        <a href="{{ post.text-file }}" class="text-file-link {% if post.text-file %}link{% else %} nolink{% endif %}">Читать самостоятельно</a>
 
       </li>
     {% endfor %}
