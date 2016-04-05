@@ -12,7 +12,7 @@ layout: default
         {% if post.event %}<span class="post-event">{{ post.event }}</span>{% endif %}
         <h3>{{ post.book-author }}</h3>
         <h2>{{ post.book-title }}</h2>
-        {% if post.part %}<h3 class="book-part">{{ post.part | markdownify | replace: ';', '|' }}</h3>{% endif %}
+        {% if post.part %}<h3 class="book-part">{{ post.part | markdownify | replace: ';', '•' }}</h3>{% endif %}
         <div class="post-meta">
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
           | <span class="reader">{{ post.reader }}</span>
