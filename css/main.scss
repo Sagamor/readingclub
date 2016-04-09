@@ -42,6 +42,33 @@ body {
   text-align: center;
 }
 
+.last-readers-list {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  font-size: .7em;
+  text-align: left;
+  font-weight: 600;
+  color: darken($bg-darker, 25%);
+}
+
+.last-readers-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.last-readers-list ul li {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  font-weight: 100;
+}
+
+.last-readers-list ul li:before {
+  content: '–';
+  margin-right: 5px;
+}
+
 .post-list {
   font-weight: 100;
 }
@@ -177,6 +204,8 @@ body {
 a.link, a.nolink {
   padding: 5px 12px;
   border-radius: 4px;
+  display: inline-block;
+  margin: 5px 0;
 }
 
 a.link {
@@ -189,11 +218,11 @@ a.link:hover {
   background-color: $brand-accent-color !important;
 }
 
-$visited-link: desaturate($brand-color, 50%);
-
-a.link:visited {
-  background-color: lighten($visited-link, 20%) !important;
-}
+// $visited-link: desaturate($brand-color, 50%);
+//
+// a.link:visited {
+//   background-color: lighten($visited-link, 20%) !important;
+// }
 
 a.nolink {
   // display: none;

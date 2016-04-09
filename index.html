@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<div class="last-readers-list">
+  Последние читавшие:
+  <ul>
+    {% for post in site.posts limit:7 %}
+    <li>{{ post.reader }} ({{ post.book-author }})</li>
+    {% endfor %}
+  </ul>
+</div>
+
 <div class="home">
   <ul class="post-list">
     <li class="center">. . .</li>
@@ -12,7 +21,7 @@ layout: default
         {% if post.event %}<span class="post-event">{{ post.event }}</span>{% endif %}
         <h3>{{ post.book-author }}</h3>
         <h2>{{ post.book-title }}</h2>
-        {% if post.part %}<h3 class="book-part">{{ post.part | markdownify | replace: ';', '•' }}</h3>{% endif %}
+        {% if post.part %}<h3 class="book-part">{{ post.part | markdownify | replace: ';', ' •' }}</h3>{% endif %}
         <div class="post-meta">
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
           | <span class="reader">{{ post.reader }}</span>
@@ -22,8 +31,8 @@ layout: default
         {% if post.content %}<blockquote>{{ post.content }}</blockquote>{% endif %}
 
         <div class="media">
-          <a href="{{ post.recording }}" class="recording-link {% if post.recording %}link{% else %} nolink{% endif %}">Слушать запись</a>
-          <a href="{{ post.text-file }}" class="text-file-link {% if post.text-file %}link{% else %} nolink{% endif %}">Читать самостоятельно</a>
+          <a href="{{ site.recordings-url }}{{ post.recording }}" target="_blank" title="Открыть запись чтения в новом окне" class="recording-link {% if post.recording %}link{% else %} nolink{% endif %}">Слушать запись</a>
+          <a href="{{ site.texts-url }}{{ post.text-file }}" target="_blank" title="Открыть текст в новом окне" class="text-file-link {% if post.text-file %}link{% else %} nolink{% endif %}">Читать самостоятельно</a>
         </div>
 
       </li>

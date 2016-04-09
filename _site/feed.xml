@@ -5,7 +5,26 @@
     <description>Читательский клуб</description>
     <link>http://sagamor.github.io/readingclub/</link>
     <atom:link href="http://sagamor.github.io/readingclub/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Apr 2016 18:58:01 +0200</pubDate>
+    <pubDate>Sat, 09 Apr 2016 23:45:14 +0200</pubDate>
+    
+      <item>
+        <title>Говард Лавкрафт Цвет из иных миров</title>
+        <description>
+          §063<br/>
+          <br/>
+          Говард Лавкрафт Цвет из иных миров<br/>
+          <br/>
+          Apr 9, 2016 Влад
+          <br/><br/>
+            <a href="H.P.Lovecraft-The_Colour_Out_of_Space.mp3" class="recording-link link">Слушать запись</a>
+            <a href="H.P.Lovecraft-The_Colour_Out_of_Space.pdf" class="text-file-link link">Читать самостоятельно</a>
+        </description>
+        <pubDate>Apr 9, 2016</pubDate>
+        <link>http://sagamor.github.io/readingclub/2016/04/09/063.html</link>
+        <guid isPermaLink="true">http://sagamor.github.io/readingclub/2016/04/09/063.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Генрих Бёлль Молчание доктора Мурке</title>
@@ -16,7 +35,7 @@
           <br/>
           Apr 2, 2016 Сагамор
           <br/><br/>
-            <a href="https://drive.google.com/open?id=0B-bb6sQF-KzlSWZlQWw1MWdzbTA" class="recording-link link">Слушать запись</a>
+            <a href="Heinrich_Boell-Murkes_Collected_Silences.mp3" class="recording-link link">Слушать запись</a>
             <a href="http://lib.ru/INPROZ/BELL/dr_murke.txt" class="text-file-link link">Читать самостоятельно</a>
         </description>
         <pubDate>Apr 2, 2016</pubDate>
@@ -36,7 +55,7 @@
 <br/>
           Mar 26, 2016 Яна
           <br/><br/>
-            <a href="https://drive.google.com/open?id=0B-bb6sQF-KzlWUhzRUl3QU5ZUVU" class="recording-link link">Слушать запись</a>
+            <a href="Tove_Jansson-Sculptors_daughter.mp3" class="recording-link link">Слушать запись</a>
             <a href="" class="text-file-link  nolink">Читать самостоятельно</a>
         </description>
         <pubDate>Mar 26, 2016</pubDate>
@@ -56,7 +75,7 @@
 <br/>
           Mar 20, 2016 Дашкин
           <br/><br/>
-            <a href="https://drive.google.com/open?id=0B-bb6sQF-KzlUG80blRNV1l6dWs" class="recording-link link">Слушать запись</a>
+            <a href="Olga_Larionova-Skazka_korolei.mp3" class="recording-link link">Слушать запись</a>
             <a href="" class="text-file-link  nolink">Читать самостоятельно</a>
         </description>
         <pubDate>Mar 20, 2016</pubDate>
@@ -189,7 +208,7 @@
           <br/>
           Dec 19, 2015 Майя
           <br/><br/>
-            <a href="https://drive.google.com/open?id=0B-bb6sQF-KzlQnlFeGVoNkRQNVE" class="recording-link link">Слушать запись</a>
+            <a href="World_Of_Warcraft-History_of_Azeroth.mp3" class="recording-link link">Слушать запись</a>
             <a href="" class="text-file-link  nolink">Читать самостоятельно</a>
         </description>
         <pubDate>Dec 19, 2015</pubDate>
@@ -535,7 +554,7 @@
           <br/>
           Sep 6, 2015 Яна
           <br/><br/>
-            <a href="https://drive.google.com/open?id=0B-bb6sQF-KzlOVZ4RTBmSmI0V1U" class="recording-link link">Слушать запись</a>
+            <a href="E.T.A.Hoffmann-The_Sandman.mp3" class="recording-link link">Слушать запись</a>
             <a href="" class="text-file-link  nolink">Читать самостоятельно</a>
         </description>
         <pubDate>Sep 6, 2015</pubDate>
