@@ -5,7 +5,7 @@
     <description>Читательский клуб</description>
     <link>http://sagamor.github.io/readingclub/</link>
     <atom:link href="http://sagamor.github.io/readingclub/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Apr 2016 23:45:14 +0200</pubDate>
+    <pubDate>Thu, 21 Apr 2016 09:46:45 +0200</pubDate>
     
       <item>
         <title>Говард Лавкрафт Цвет из иных миров</title>
@@ -36,7 +36,7 @@
           Apr 2, 2016 Сагамор
           <br/><br/>
             <a href="Heinrich_Boell-Murkes_Collected_Silences.mp3" class="recording-link link">Слушать запись</a>
-            <a href="http://lib.ru/INPROZ/BELL/dr_murke.txt" class="text-file-link link">Читать самостоятельно</a>
+            <a href="Heinrich_Boell-Murkes_Collected_Silences.pdf" class="text-file-link link">Читать самостоятельно</a>
         </description>
         <pubDate>Apr 2, 2016</pubDate>
         <link>http://sagamor.github.io/readingclub/2016/04/02/062.html</link>
@@ -604,12 +604,13 @@
       </item>
     
       <item>
-        <title>Terry Pratchett Troll Bridge (англ.)</title>
+        <title>Terry Pratchett Troll Bridge</title>
         <description>
           §032<br/>
           <br/>
-          Terry Pratchett Troll Bridge (англ.)<br/>
-          <br/>
+          Terry Pratchett Troll Bridge<br/>
+          <p>англ.</p>
+<br/>
           Aug 8, 2015 Сагамор
           <br/><br/>
             <a href="" class="recording-link  nolink">Слушать запись</a>
