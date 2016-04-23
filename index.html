@@ -6,7 +6,7 @@ layout: default
   Последние читавшие:
   <ul>
     {% for post in site.posts limit:7 %}
-    <li>{{ post.reader }} ({{ post.book-author }})</li>
+    <li>{{ post.reader }} ({{ post.date | date: "%b %-d, %Y" }})</li>
     {% endfor %}
   </ul>
 </div>
